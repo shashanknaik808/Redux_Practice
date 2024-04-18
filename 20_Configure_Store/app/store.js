@@ -8,4 +8,4 @@ const store = configureStore({
     }
 })
 
-module.exports = store
+module.exports = store;
