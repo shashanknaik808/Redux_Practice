@@ -1,6 +1,7 @@
 const store = require('./app/store.js');
 const cakeActions = require('./features/cake/cakeSlice.js').cakeActions;
 const icecreamActions = require('./features/icecream/icecreamSlice.js').icecreamActions
+
 console.log('Initial state', store.getState());
 const unsubscribe = store.subscribe(function () {
     console.log('Updated state', store.getState());
