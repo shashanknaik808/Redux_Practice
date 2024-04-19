@@ -4,6 +4,7 @@ const initialState = {
     numOfIcecreams: 20,
 };
 
+
 const icecreamSlice = createSlice({
     name: 'icecream',
     initialState,
@@ -15,12 +16,14 @@ const icecreamSlice = createSlice({
             state.numOfIcecreams += action.payload;
         },
     },
+
     extraReducers: (builder) => {
         builder.addCase('cake/ordered', (state) => {
             state.numOfIcecreams--;
         });
     },
 });
+
 
 module.exports = icecreamSlice.reducer;
 module.exports.icecreamActions = icecreamSlice.actions;
