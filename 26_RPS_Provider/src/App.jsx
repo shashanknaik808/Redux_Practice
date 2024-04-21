@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import './App.css'
-import { CakeView } from './features/cake/CakeView'
-import { IcecreamView } from './features/icecream/IcecreamView'
-import { UserView } from './features/user/UserView'
+import CakeView from './features/cake/cakeView';
+import IcecreamView from './features/icecream/icecreamView';
+import UserView from './features/user/userView';
 
 function App() {
   const [count, setCount] = useState(0)
